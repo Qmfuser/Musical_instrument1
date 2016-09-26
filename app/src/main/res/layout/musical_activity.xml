@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/musical_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_FFFFFF"
+    tools:context="activity.musical.hsd.com.musical_instrument.MusicalActivity">
+
+
+  <RelativeLayout
+      android:id="@+id/rl_title"
+      android:layout_width="match_parent"
+      android:background="@color/color_97C8CD"
+      android:layout_height="@dimen/musical_title_height">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:textSize="@dimen/musical_title_ts"
+          android:textColor="@color/color_FFFFFF"
+          android:text="@string/musical"/>
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:layout_marginRight="@dimen/musical_title_iv_mr"
+          android:src="@drawable/musical_search2x"/>
+
+  </RelativeLayout>
+
+  <ScrollView
+      android:id="@+id/sv"
+      android:layout_below="@id/rl_title"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <android.support.v4.view.ViewPager
+          android:id="@+id/viewpage"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/musical_vp_height"
+          android:layout_alignParentTop="true"
+          android:layout_alignParentStart="true">
+      </android.support.v4.view.ViewPager>
+      <LinearLayout
+          android:id="@+id/musical_vp_hint"
+          android:layout_alignBottom="@id/viewpage"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:padding="@dimen/musical_vp_hint"
+          android:background="@color/color00000000">
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_fff"
+            android:textSize="@dimen/musical_vp_hint_size"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:id="@+id/tv_intro" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/musical_vp_dot"
+            android:id="@+id/dot_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/musical_lv_hzl"
+          android:layout_below="@id/musical_vp_hint"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:minHeight="@dimen/musical_lv_hzl_height"
+          android:background="@color/color_FFFFFF"
+          android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:textColor="@color/color_97C8CD"
+            android:gravity="center"
+            android:text="@string/text1" />
+
+        <com.hsd.musical.view.CHScrollView
+            android:id="@+id/item_scroll_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:scrollbars="none" >
+
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="horizontal" >
+            <TextView
+                android:text="@string/text2"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textColor="@color/color_666"
+                android:gravity="center" />
+
+            <TextView
+                android:text="@string/text3"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/musical_lv_hzl_left"
+                android:layout_height="fill_parent"
+                android:textColor="@color/color_666"
+                android:gravity="center"
+                android:id="@+id/textView" />
+
+            <TextView
+                android:text="@string/text4"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/musical_lv_hzl_left"
+                android:textColor="@color/color_666"
+                android:layout_height="fill_parent"
+                android:gravity="center" />
+
+            <TextView
+                android:text="@string/text5"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/musical_lv_hzl_left"
+                android:textColor="@color/color_666"
+                android:layout_height="fill_parent"
+                android:gravity="center" />
+
+            <TextView
+                android:text="@string/text6"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/musical_lv_hzl_left"
+                android:textColor="@color/color_666"
+                android:layout_height="fill_parent"
+                android:gravity="center" />
+
+            <TextView
+                android:text="@string/text7"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/musical_lv_hzl_left"
+                android:textColor="@color/color_666"
+                android:layout_height="fill_parent"
+                android:gravity="center" />
+
+            <TextView
+                android:text="@string/text8"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/musical_lv_hzl_left"
+                android:textColor="@color/color_666"
+                android:layout_height="fill_parent"
+                android:gravity="center" />
+
+          </LinearLayout>
+
+        </com.hsd.musical.view.CHScrollView>
+
+      </LinearLayout>
+
+      <View
+          android:id="@+id/musical_view"
+          android:layout_below="@id/musical_lv_hzl"
+          android:layout_width="match_parent"
+          android:background="@color/color_d1d1d1"
+          android:layout_height="@dimen/musical_view_height">
+
+      </View>
+      <com.hsd.musical.bean.Musical_MyListView
+          android:id="@+id/musical_lv_special"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/musical_lv_special_height"
+          android:layout_below="@+id/musical_view"
+          android:layout_alignParentStart="true">
+
+      </com.hsd.musical.bean.Musical_MyListView>
+      <View
+          android:id="@+id/musical_view2"
+          android:layout_below="@id/musical_lv_special"
+          android:layout_width="match_parent"
+          android:layout_marginTop="@dimen/musical_lv_special_mt"
+          android:background="@color/color_d1d1d1"
+          android:layout_height="@dimen/musical_view_height">
+
+      </View>
+
+      <com.hsd.musical.bean.Musical_MyListView
+          android:id="@+id/musical_lv_introduce"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/musical_lv_introduce_height"
+          android:layout_below="@+id/musical_view2"
+          android:layout_alignParentStart="true">
+
+      </com.hsd.musical.bean.Musical_MyListView>
+      <View
+          android:id="@+id/musical_view3"
+          android:layout_below="@id/musical_lv_introduce"
+          android:layout_width="match_parent"
+          android:layout_marginTop="@dimen/musical_lv_special_mt"
+          android:background="@color/color_d1d1d1"
+          android:layout_height="@dimen/musical_view_height">
+
+      </View>
+      <!--ooooooooooooooooooooooooooooooooooooooooooooooo-->
+      <com.hsd.musical.view.MyGridView
+          android:id="@+id/yq_grid"
+          android:layout_below="@id/musical_view3"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:columnWidth="150dip"
+          android:gravity="center"
+          android:horizontalSpacing="1dip"
+          android:numColumns="2"
+          android:stretchMode="columnWidth"
+          android:verticalSpacing="1dip">
+      </com.hsd.musical.view.MyGridView>
+
+
+    </RelativeLayout>
+
+  </ScrollView>
+
+
+</RelativeLayout>

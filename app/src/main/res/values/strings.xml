@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Musical_instrument</string>
+    <string name="musical">乐器</string>
+    <string name="text1">全部</string>
+    <string name="text2">分类1</string>
+    <string name="text3">分类2</string>
+    <string name="text4">分类3</string>
+    <string name="text5">分类4</string>
+    <string name="text6">分类5</string>
+    <string name="text7">分类6</string>
+    <string name="text8">分类7</string>
+    <string name="course">课程</string>
+    <string name="my">我</string>
+    <string name="yueqi">乐器</string>
+</resources>

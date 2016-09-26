@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/introduce_lsit_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#333"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="乐器名称乐器名称"/>
+
+    <TextView
+        android:id="@+id/introduce_lsit_tv2"
+        android:layout_below="@id/introduce_lsit_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#333"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="318.00"/>
+
+    <TextView
+        android:id="@+id/introduce_lsit_tv3"
+        android:layout_below="@id/introduce_lsit_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#999"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:gravity="center"
+        android:text="也许大家对这些客户端并不陌生，但是不知道大家有没有注意到这些不足之处呢，这里我就叨唠吓这些不人性化的地方"/>
+
+    <ImageView
+        android:id="@+id/introduce_lsit_iv1"
+        android:layout_below="@id/introduce_lsit_tv3"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="11dp"
+
+        android:layout_width="106dp"
+        android:layout_height="106dp" />
+
+    <ImageView
+        android:id="@+id/introduce_lsit_iv2"
+        android:layout_below="@id/introduce_lsit_tv3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+
+        android:layout_width="106dp"
+        android:layout_height="106dp" />
+
+    <ImageView
+        android:id="@+id/introduce_lsit_iv3"
+        android:layout_width="106dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true"
+
+        android:layout_height="106dp"
+        android:layout_below="@id/introduce_lsit_tv3" />
+
+</RelativeLayout>
